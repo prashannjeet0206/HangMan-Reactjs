@@ -3,12 +3,15 @@ import TextInputForm from "./TextInputForm";
 
 function TextInputFormContainer() {
   const [inputType, setInputTYpe] = useState("text");
+  const [inputData, setInputData] = useState("");
+
   function handleSubmit(event) {
     event.preventDefault();
+    console.log(inputData);
   }
 
   function handleFormTextInput(e) {
-    console.log(e.target.value);
+    setInputData(e.target.value);
   }
 
   function handleShowHide() {
@@ -25,6 +28,7 @@ function TextInputFormContainer() {
       handleSubmit={handleSubmit}
       handleFormTextInput={handleFormTextInput}
       handleShowHide={handleShowHide}
+      inputData={inputData}
     />
   );
 }

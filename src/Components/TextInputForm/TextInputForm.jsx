@@ -6,6 +6,7 @@ const TextInputForm = ({
   handleFormTextInput,
   handleShowHide,
   inputType,
+  inputData,
 }) => {
   return (
     <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
@@ -15,6 +16,7 @@ const TextInputForm = ({
           label="Start the Game"
           onChangeHandler={handleFormTextInput}
           placeholder="Enter Your Clue here"
+          value={inputData}
         />
       </div>
       <div>
