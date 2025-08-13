@@ -5,6 +5,7 @@ import PlayPage from "./Pages/PlayPage";
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<StartPage />} />
       <Route path="/start" element={<StartPage />} />
       <Route path="/play" element={<PlayPage />} />
     </Routes>
