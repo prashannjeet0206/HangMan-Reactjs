@@ -8,6 +8,7 @@ function TextInputFormContainer() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(inputData);
+    setInputData("");
   }
 
   function handleFormTextInput(e) {
