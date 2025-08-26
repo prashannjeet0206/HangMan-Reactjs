@@ -11,7 +11,11 @@ function TextInputFormContainer() {
   function handleSubmit(event) {
     event.preventDefault();
     if (inputData) {
+      //* sending data to next page using state object
       navigate("/play", { state: { data: inputData } });
+
+      // *sending to next page with query params
+      // navigate(`/play?text=${inputData}`);
     }
     setInputData("");
   }
